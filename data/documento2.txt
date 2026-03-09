@@ -1,0 +1,1 @@
+ChromaDB es una base de datos vectorial que permite almacenar embeddings y realizar búsquedas por similitud semántica en aplicaciones de inteligencia artificial.

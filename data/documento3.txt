@@ -1,0 +1,1 @@
+Un sistema RAG combina recuperación de información y generación de lenguaje natural para responder preguntas basadas en documentos.

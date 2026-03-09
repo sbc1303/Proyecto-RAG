@@ -1,0 +1,1 @@
+Python es un lenguaje de programación interpretado muy utilizado en inteligencia artificial, desarrollo web y análisis de datos.
