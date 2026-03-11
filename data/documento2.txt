@@ -1,1 +1,13 @@
-ChromaDB es una base de datos vectorial que permite almacenar embeddings y realizar búsquedas por similitud semántica en aplicaciones de inteligencia artificial.
+ChromaDB es una base de datos vectorial de código abierto diseñada específicamente para aplicaciones de inteligencia artificial donde su función principal es almacenar embeddings y permitir búsquedas por similitud semántica de forma eficiente.
+
+A diferencia de las bases de datos relacionales tradicionales, ChromaDB no busca registros por campos exactos sino por proximidad en el espacio vectorial. Esto significa que una consulta como "¿qué es el aprendizaje automático?" puede recuperar un fragmento que hable de "machine learning" aunque no contenga esas palabras exactas, porque ambos conceptos están cerca en el espacio semántico.
+
+ChromaDB puede funcionar en modo efímero (en memoria, útil para pruebas) o en modo persistente guardando los datos en disco mediante PersistentClient. En este proyecto se usa el modo persistente, lo que significa que los embeddings se guardan en la carpeta chroma_db/ y no es necesario reindexar los documentos cada vez que se lanza la aplicación.
+
+ChromaDB organiza los vectores en colecciones, que son equivalentes a las tablas en una base de datos relacional organizando cada entrada en una colección contiene:
+
+- El vector
+- El texto original del fragmento
+- Metadatos opcionales
+
+Y esto permite poder filtrar por resultado. 
