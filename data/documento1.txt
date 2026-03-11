@@ -1,1 +1,7 @@
-Python es un lenguaje de programación interpretado muy utilizado en inteligencia artificial, desarrollo web y análisis de datos.
+Python es un lenguaje interpretado que se lee casi como pseudocódigo, lo que lo hace muy accesible para empezar. No necesitas declarar tipos, la sintaxis es limpia y en pocas líneas se puede tener algo funcionando. Eso explica por qué se ha convertido en el lenguaje más usado en ciencia de datos e inteligencia artificial.
+
+Para este proyecto lo relevante es que casi todo el ecosistema de LLMs y RAG está construido sobre Python. LlamaIndex, ChromaDB, Ollama... todas estas herramientas tienen sus librerías en Python. Si quisieras hacer lo mismo en otro lenguaje, te encontrarías con mucho menos soporte y documentación.
+
+Una cosa importante cuando se trabaja con Python es usar entornos virtuales ya que sin ellos, todas las librerías se instalan de forma global en tu máquina y tarde o temprano tienes conflictos de versiones entre proyectos. Con un entorno virtual cada proyecto tiene sus propias dependencias aisladas. El archivo requirements.txt sirve para dejar registro de qué librerías necesita el proyecto, de forma que cualquiera pueda reproducir el entorno con un solo comando.
+
+En este proyecto se usa Python 3.11. Las dependencias principales son llama-index, chromadb y streamlit.
